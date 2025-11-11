@@ -147,3 +147,82 @@ body {
 .controls button:active {
     background-color: #14476b;
 }
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+    .editor-container {
+        width: 80%;
+        height: 95%;
+        padding: 15px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .wrapper .code-editor {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .filter .slider-container .filter-info, .filter .slider-container input {
+        width: 100%;
+    }
+    
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .editor-container {
+        width: 90%;
+        height: 95%;
+        padding: 15px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .wrapper .code-editor, .wrapper{
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .filter .slider-container .filter-info, .filter .slider-container input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .editor-container {
+        width: 95%;
+        height: 95%;
+        padding: 10px;
+    }
+
+    .editor-container h1 {
+        font-size: 22px;
+    }
+
+    .wrapper {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .wrapper .code-editor, .wrapper {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .filter .slider-container .filter-info, .filter .slider-container input {
+        width: 100%;
+    }
+
+    .controls button {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+}
