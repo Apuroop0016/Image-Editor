@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        <div class="editor-container disable">
+            <h1>Image Editor</h1>
+            <!-- Editor content goes here -->
+             <div class="wrapper">
+                <div class="code-editor">
+                    <div class="filter">
+                        <label class="title">Filter:</label>
+                    <div class="slider-container">
+                       <div class="filter-info"> 
+                        <p class="text" id="Brightness">Brightness</p>
+                        <p class="value">100%</p>
+                        </div>
+                        <input type="range" class="slider" min="0" max="200" value="100">
+
+                        <div class="filter-info"> 
+                        <p class="text" id="Saturation">Saturation</p>
+                        <p class="value">100%</p>
+                        </div>
+                        <input type="range" class="slider" min="0" max="200" value="100">
+
+                        <div class="filter-info"> 
+                        <p class="text" id="Inversion">Inversion</p>
+                        <p class="value">100%</p>
+                        </div>
+                        <input type="range" class="slider" min="0" max="200" value="0">
+
+                        <div class="filter-info"> 
+                        <p class="text" id="Grayscale">Grayscale</p>
+                        <p class="value">100%</p>
+                        </div>
+                        <input type="range" class="slider" min="0" max="200" value="100">
+
+                        <div class="filter-info"> 
+                        <p class="text" id="Contrast">Contrast</p>
+                        <p class="value">100%</p>
+                        </div>
+                        <input type="range" class="slider" min="0" max="200" value="0">
+                        
+                        <div class="filter-info"> 
+                        <p class="text" id="Sepia">Sepia</p>
+                        <p class="value">100%</p>
+                        </div>
+                        <input type="range" class="slider" min="0" max="200" value="0">
+                    </div>    
+            </div>
+             <div class="preview-image">
+                <img src="/PlaceHolder.png" alt="Preview Image">
+                
+                <div class="controls">
+                 <button class="reset-btn">Reset Filters</button>
+                  <div class="row">
+                    <input type="file" class="file-input" accept="image/*" hidden>
+                   <button class="choose-img">Choose</button>
+                   <button class="save-img">Download</button>
+                  </div>
+                </div>
+             
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
