@@ -5,6 +5,7 @@ const filterSlider = document.querySelectorAll('.slider-container input');
 const filterValue = document.querySelectorAll('.filter-info .value');
 const resetFilterBtn = document.querySelector('.reset-btn');
 const saveImgBtn = document.querySelector('.save-img');
+const previewBtn = document.querySelector('.preview-btn');
 
 chooseImgBtn.addEventListener('click', () => {
     fileInput.click();
@@ -52,6 +53,13 @@ resetFilterBtn.addEventListener('click', () => {
     filterValue[4].innerText = '0%';
     filterValue[5].innerText = '0%';
     applyFilters();
+});
+
+previewBtn.addEventListener('click', () => {
+    previewImg.style.filter = 'none';
+    setTimeout(() => {
+        applyFilters();
+    }, 2000);
 });
 
 saveImgBtn.addEventListener('click', () => {

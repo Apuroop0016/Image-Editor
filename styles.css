@@ -21,7 +21,7 @@ body {
     max-width: 900px;
 }
 
-.editor-container.disable :where(.reset-btn, .save-img, .slider-container input) {
+.editor-container.disable :where(.reset-btn, .preview-btn, .save-img, .slider-container input) {
     opacity: 0.6;
     pointer-events: none;
 }
